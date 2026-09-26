@@ -1,1 +1,47 @@
 @import "tailwindcss";
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(30 41 59);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(71 85 105);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(100 116 139);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Code blocks */
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* Selection color */
+::selection {
+  background-color: rgba(139, 92, 246, 0.3);
+  color: white;
+}
+
+/* Animation for pulse dots */
+@keyframes pulse-dot {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
